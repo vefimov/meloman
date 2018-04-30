@@ -12,7 +12,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @Component({
   selector: 'page-artists',
   templateUrl: 'artists.html',
-  name: 'artists',
 })
 export class ArtistsPage {
 

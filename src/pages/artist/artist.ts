@@ -8,18 +8,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+@IonicPage({
+  segment: 'artist/:id',
+})
 @Component({
   selector: 'page-artist',
   templateUrl: 'artist.html',
 })
 export class ArtistPage {
-
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    console.log(this.navParams);
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ArtistPage');
   }
-
 }
